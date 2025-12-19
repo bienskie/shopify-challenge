@@ -2,15 +2,23 @@
 
     var app = {
 
-        custom_script: function () {
-            
+        bannerTestimonials: function () {
+            $('.banner__content--testimonials--slider').flickity({
+                cellAlign: 'center',   
+                contain: true,         
+                wrapAround: true,      
+                autoPlay: 5000,        
+                fade: true,            
+                pageDots: false,       
+                prevNextButtons: false  
+            });
         },
 
     }
 
 
     jQuery(document).ready(function () {
-        app.custom_script();;
+        app.bannerTestimonials();;
 
     });
 

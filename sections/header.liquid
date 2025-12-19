@@ -1,26 +1,26 @@
 <header class="header">
     <div class="header__announcement-bar">Free shipping on us orders over $100</div>
-    <div class="header__inner">
-        <div class="header__inner--left">
-            <div class="header__burger-menu">
+    <div class="header__inner grid-x align-middle align-justify">
+        <div class="header__inner--left grid-x align-middle">
+            <div class="header__burger-menu grid-y">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="header__logo">
                 <a href="/">
-                    <img width="42" height="55" src="{{ 'images/header-logo.svg' | asset_url }}" alt="Logo">
+                    <img class="img-responsive" width="42" height="55" src="{{ 'images/header-logo.svg' | asset_url }}" alt="Logo">
                 </a>
             </div>
         </div>
         <div class="header__inner--right">
             <div class="header__links">
-                <a href="#">Get Started</a>
+                <a class="grid-x align-center align-middle text-center" href="#">Get Started</a>
             </div>
             <div class="header__cart">
                 <a href="#" aria-label="Cart">
-                    <img width="36" height="32" src="{{ 'images/cart-icon.png' | asset_url }}" alt="Cart">
-                    <span>1</span>
+                    <img class="img-responsive" width="36" height="32" src="{{ 'images/cart-icon.png' | asset_url }}" alt="Cart">
+                    <span class="grid-x align-center align-middle text-center">1</span>
                 </a>
             </div>
         </div>

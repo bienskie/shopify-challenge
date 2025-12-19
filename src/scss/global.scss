@@ -2,8 +2,8 @@
 
 :root {
     /** Font default */
-    --font-family-default: "Roboto", sans-serif;
-    --font-family-title: "Bebas Neue", sans-serif;
+    --font-family-default: "Roboto Mono", monospace;
+    --font-family-title: "Inter", sans-serif;
     --font-size-default: 14px;
     --font-size-title: 18px;
     --font-color-default: #000000;
@@ -29,6 +29,7 @@ body {
     background: #FFFFFF;
     color: var(--font-color-default);
     margin: 0;
+    line-height: 1;
 
     /* Remove the comment from line 85 to 86 if the font issue in safari occurs */
     -webkit-font-smoothing: antialiased;
@@ -44,6 +45,12 @@ a,a:hover,a:visited,a:focus,input,input:focus,textarea,textarea:focus,select:foc
 div#main-wrapper{
     overflow: hidden;
     position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 // header
@@ -67,15 +74,10 @@ div#main-wrapper{
     }
 
     &__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         background: #fff;
         padding: 15px 19px 15px 28px;
 
         &--left {
-            display: flex;
-            align-items: center;
             gap: 16px;
         }
 
@@ -88,8 +90,6 @@ div#main-wrapper{
 
     &__burger-menu {
         cursor: pointer;
-        display: flex;
-        flex-direction: column;
         width: 32px;
         gap: 9px;
         transition: all 0.3s ease-in-out;
@@ -111,6 +111,11 @@ div#main-wrapper{
         a {
             display: block;
             position: relative;
+            max-width: 67px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -120,14 +125,11 @@ div#main-wrapper{
             height: 46px;
             border-radius: 35px;
             background-color: rgba(34, 36, 48, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
             color: #fff !important;
             text-transform: uppercase;
             border-radius: 35px;
             transition: all 0.3s ease-in-out;
+            font-size: 16px;
 
             &:hover {
                 background: var(--primary);
@@ -139,6 +141,7 @@ div#main-wrapper{
         a {
             display: block;
             position: relative;
+            max-width: 36px;
 
             img {
                 transition: all 0.3s ease-in-out;
@@ -152,17 +155,13 @@ div#main-wrapper{
 
             span {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: -9px;
+                right: -6px;
                 color: #fff;
                 background: #000;
                 width: 24px;
                 height: 24px;
                 border-radius: 100%;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 font-size: 18px;
             }
         }

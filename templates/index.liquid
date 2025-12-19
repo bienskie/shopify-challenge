@@ -1,6 +1,6 @@
 {% comment %} Banner {% endcomment %}
  <section class="banner">
-    <div class="banner__holder">
+    <div class="banner__holder grid-x">
         <div class="banner__content">
             <div class="banner__conntent--inner">
                 <div class="banner__content--title">
@@ -8,14 +8,14 @@
                     <span>Try the One Minute Skincare Routine</span>
                 </div>
                 <div class="banner__content--btn">
-                    <a href="#">Try Today!</a>
+                    <a href="#" class="grid-x align-center align-middle text-center">Try Today!</a>
                 </div>
             </div>
             <div class="banner__content--testimonials">
-                <div class="banner__content--testimonials-slider">
+                <div class="banner__content--testimonials--slider">
                     <div>
                         <div class="banner__content--testimonials--list">
-                            <div class="testi-stars">
+                            <div class="testi-stars grid-x align-middle">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -27,8 +27,8 @@
                                     “I love this stuff, it totally changed the game for me”
                                 </p>
                             </div>
-                            <div class="testi-author">
-                                <img width="39" height="39" src="{{ 'images/author-photo.jpg' | asset_url }}" alt="Author">
+                            <div class="testi-author grid-x align-middle">
+                                <img class="img-responsive" width="39" height="39" src="{{ 'images/author-photo.jpg' | asset_url }}" alt="Author">
                                 Peter S.
                             </div>
                         </div>
@@ -47,8 +47,8 @@
                                     “I love this stuff, it totally changed the game for me”
                                 </p>
                             </div>
-                            <div class="testi-author">
-                                <img width="39" height="39" src="{{ 'images/author-photo.jpg' | asset_url }}" alt="Author">
+                            <div class="testi-author grid-x align-middle">
+                                <img class="img-responsive" width="39" height="39" src="{{ 'images/author-photo.jpg' | asset_url }}" alt="Author">
                                 Peter S.
                             </div>
                         </div>
@@ -57,7 +57,85 @@
             </div>
         </div>
         <div class="banner__photo">
-            <img width="611" height="617" src="{{ 'images/banner-photo.png' | asset_url }}" alt="Banner Photo">
+            <div class="banner__photo--inner">
+                <img class="img-responsive" width="611" height="617" src="{{ 'images/banner-photo.png' | asset_url }}" alt="Banner Photo">
+            </div>
         </div>
     </div>
  </section>
+
+ {% comment %} welcome {% endcomment %}
+ <section class="welcome">
+    <div class="welcome__holder">
+        <div class="welcome__tagline">
+            Just <span>one minute</span> a day will make your skin look healthier and younger
+        </div>
+        <div class="welcome__inner grid-x">
+            <div class="welcome__content">
+                <div class="welcome__content--title">
+                    A simple routine that works
+                </div>
+                <div class="welcome__content--text">
+                    <p>
+                        Say goodbye to complicated skincare routines. Our mens' skincare line is designed for simplicity and effectiveness. With our lightweight formulas, you can achieve healthier and younger-looking skin with minimal effort. Perfect for guys who are new to skincare or just want to keep it simple.
+                    </p>
+                </div>
+                <div class="welcome__content--list">
+                    <ul>
+                        <li>
+                            <img class="img-responsive" width="24" height="22" src="{{ 'images/check-icon.png' | asset_url }}" alt="Check">
+                            Lightweight formulas
+                        </li>
+                        <li>
+                            <img class="img-responsive" width="24" height="22" src="{{ 'images/check-icon.png' | asset_url }}" alt="Check">
+                            Easy to use formats
+                        </li>
+                        <li>
+                            <img class="img-responsive" width="24" height="22" src="{{ 'images/check-icon.png' | asset_url }}" alt="Check">
+                            Clean Ingredients
+                        </li>
+                        <li>
+                            <img class="img-responsive" width="24" height="22" src="{{ 'images/check-icon.png' | asset_url }}" alt="Check">
+                            Everything you need, nothing you don’t
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="welcome__photo">
+                <div class="welcome__photo--inner">
+                    <img class="img-responsive" width="568" height="670" src="{{ 'images/wc-photo.png' | asset_url }}" alt="Photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ {% comment %} features {% endcomment %}
+ <section class="features">
+    <div class="features__holder grid-x">
+        <div class="features__list">
+            <div class="features__list--photo">
+                <img class="img-responsive" width="135" height="135" src="{{ 'images/features-1.jpg' | asset_url }}" alt="Photo">
+            </div>
+            <div class="features__list--label">
+                Cutting-edge <br>Korean Skincare Technology
+            </div>
+        </div>
+        <div class="features__list">
+            <div class="features__list--photo">
+                <img class="img-responsive" width="135" height="135" src="{{ 'images/features-2.jpg' | asset_url }}" alt="Photo">
+            </div>
+            <div class="features__list--label">
+                Science-backed <br>Ingredients
+            </div>
+        </div>
+        <div class="features__list">
+            <div class="features__list--photo">
+                <img class="img-responsive" width="135" height="135" src="{{ 'images/features-3.jpg' | asset_url }}" alt="Photo">
+            </div>
+            <div class="features__list--label">
+                Dematologically <br>Tested
+            </div>
+        </div>
+    </div>
+</section>

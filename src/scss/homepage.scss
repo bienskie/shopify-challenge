@@ -1,3 +1,203 @@
-div {
-    color: #000;
+// banner
+.banner {
+    position: relative;
+    margin-top: 113px;
+    background: linear-gradient(232deg, rgba(70, 78, 112, 1) 0%, rgba(32, 55, 70, 1) 100%);
+    position: relative;
+    padding: 59px 15px 0;
+
+    &__holder {
+        max-width: 1262px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+    }
+
+    &__content {
+        width: 53.091%;
+        padding: 32px 0 0;
+
+        &--title {
+            color: rgba(255, 250, 246, 1);
+            font-family: var(--font-family-title);
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: -1.07px;
+            text-transform: uppercase;
+            line-height: 0.859;
+
+            span {
+                font-size: 18px;
+                color: #fff;
+                font-family: var(--font-family-default);
+                line-height: 1.333;
+                margin-top: 19px;
+                display: block;
+                font-weight: 400;
+                letter-spacing: 0;
+            }
+        }
+
+        &--btn {
+            margin-top: 21px;
+            margin-bottom: 173px;
+
+            a {
+                max-width: 314px;
+                height: 56px;
+                background: var(--primary);
+                border-radius: 35px;
+                font-size: 16px;
+                color: #000;
+                transition: all 0.3s ease-in-out;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: #222430;
+                    color: #fff;
+                }
+            }
+        }
+
+        &--testimonials {
+            max-width: 331px;
+
+            &--slider {
+
+            }
+
+            &--list {
+                .testi-stars {
+                    color: var(--primary);
+                    font-size: 18px;
+                    gap: 5px;
+                    margin-bottom: 15px;
+                }
+
+                .testi-text {
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: 1.333;
+                    text-align: justify;
+                }
+
+                .testi-author {
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #fff;
+                    gap: 11px;
+
+                    img {
+                        max-width: 43px;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__photo {
+        width: 46.909%;
+
+        &--inner {
+            position: relative;
+            margin-left: -100px;
+
+            img {
+                max-width: 674px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// welcome
+.welcome {
+    position: relative;
+    padding: 42px 15px 67px;
+
+    &__holder {
+        max-width: 1264px;
+        margin: 0 auto;
+    }
+
+    &__tagline {
+        color: rgba(46, 48, 46, 1);
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        background: var(--primary);
+        border-radius: 28.5px;
+        padding: 20px 15px;
+
+        span {
+            display: inline-block;
+            border-bottom: rgba(46, 48, 46, 1) 2px solid;
+        }
+    }
+
+    &__inner {
+        margin-top: 83px;
+    }
+
+    &__content {
+        width: 51.108%;
+
+        &--title {
+            color: rgba(46, 48, 46, 1);
+            font-family: var(--font-family-title);
+            font-size: 80px;
+            font-weight: 900;
+            letter-spacing: -1.33px;
+            text-transform: uppercase;
+            line-height: .9;
+            margin-bottom: 37px;
+        }
+
+        &--text {
+            border-bottom: rgba(29, 60, 52, .1) 2px solid;
+            max-width: 545px;
+            margin-bottom: 26px;
+
+            p {
+                color: rgba(46, 48, 46, 1);
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.333;
+                margin-bottom: 25px;
+            }
+        }
+
+        &--list {
+            ul {
+                list-style: none;
+                margin-left: 0;
+
+                li {
+                    color: rgba(46, 48, 46, 1);
+                    font-size: 18px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    gap: 13px;
+                    margin-bottom: 20px;
+
+                    img {
+                        max-width: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__photo{
+        width: 48.892%;
+
+        &--inner {
+            max-width: 568px;
+        }
+    }
 }
