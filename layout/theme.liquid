@@ -7,15 +7,16 @@
 
 {{ content_for_header }}
 
-{{ 'css/global.css' | asset_url | stylesheet_tag }}
-{{ 'css/homepage.css' | asset_url | stylesheet_tag }}
-
 <!-- Flickity CSS -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  {{ 'css/global.css' | asset_url | stylesheet_tag }}
+  {{ 'css/homepage.css' | asset_url | stylesheet_tag }}
 </head>
 
 <body>
@@ -35,7 +36,8 @@
 </div>
 
 <!-- Your theme JS -->
-  {{ 'global.js' | asset_url | script_tag }}
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  {{ 'js/global.js' | asset_url | script_tag }}
 
   <!-- Flickity JS -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
