@@ -112,16 +112,16 @@
 
  {% comment %} features {% endcomment %}
  <section class="features">
-    <div class="features__holder grid-x">
-        <div class="features__list">
+    <div class="features__holder grid-x align-middle align-justify">
+        <div class="features__list grid-x align-middle">
             <div class="features__list--photo">
                 <img class="img-responsive" width="135" height="135" src="{{ 'images/features-1.jpg' | asset_url }}" alt="Photo">
             </div>
             <div class="features__list--label">
-                Cutting-edge <br>Korean Skincare Technology
+                Cutting-edge <br>Korean Skincare <br>Technology
             </div>
         </div>
-        <div class="features__list">
+        <div class="features__list grid-x align-middle">
             <div class="features__list--photo">
                 <img class="img-responsive" width="135" height="135" src="{{ 'images/features-2.jpg' | asset_url }}" alt="Photo">
             </div>
@@ -129,12 +129,61 @@
                 Science-backed <br>Ingredients
             </div>
         </div>
-        <div class="features__list">
+        <div class="features__list grid-x align-middle">
             <div class="features__list--photo">
                 <img class="img-responsive" width="135" height="135" src="{{ 'images/features-3.jpg' | asset_url }}" alt="Photo">
             </div>
             <div class="features__list--label">
                 Dematologically <br>Tested
+            </div>
+        </div>
+    </div>
+</section>
+
+ {% comment %} how it works {% endcomment %}
+ <section class="how-it-works">
+    <div class="how-it-works__holder">
+        <div class="how-it-works__head">
+            <div class="how-it-works__head--sub-text">
+                Heres how D1 works
+            </div>
+            <div class="how-it-works__head--clock">
+                <img class="img-responsive" width="113" height="119" src="{{ 'images/clock-icon.png' | asset_url }}" alt="Clock">
+            </div>
+            <div class="how-it-works__head--title">
+                Just 1 minute a day
+            </div>
+            <div class="how-it-works__steps grid-x align-justify">
+                <div class="how-it-works__steps--list">
+                    <div class="how-it-works__steps--photo">
+                        <img class="img-responsive" width="332" height="480" src="{{ 'images/steps-photo-1.jpg' | asset_url }}" alt="Photo">
+                        <span>1</span>
+                    </div>
+                    <div class="how-it-works__steps--content">
+                        <img class="img-responsive" width="88" height="123" src="{{ 'images/steps-product-1.png' | asset_url }}" alt="Product">
+                        Wash your face with our Bamboo Charcoal Cleanser
+                    </div>
+                </div>
+                <div class="how-it-works__steps--list">
+                    <div class="how-it-works__steps--photo">
+                        <img class="img-responsive" width="332" height="480" src="{{ 'images/steps-photo-2.jpg' | asset_url }}" alt="Photo">
+                        <span>2</span>
+                    </div>
+                    <div class="how-it-works__steps--content">
+                        <img class="img-responsive" width="61" height="83" src="{{ 'images/steps-product-2.png' | asset_url }}" alt="Product">
+                        Apply a dime size amount of All Day Moisturizer evenly to your face
+                    </div>
+                </div>
+                <div class="how-it-works__steps--list">
+                    <div class="how-it-works__steps--photo">
+                        <img class="img-responsive" width="332" height="480" src="{{ 'images/steps-photo-3.jpg' | asset_url }}" alt="Photo">
+                        <span>3</span>
+                    </div>
+                    <div class="how-it-works__steps--content">
+                        <img class="img-responsive" width="68" height="118" src="{{ 'images/steps-product-3.png' | asset_url }}" alt="Product">
+                        Apply small amount of our Eye Cream under your eyes and around the sides
+                    </div>
+                </div>
             </div>
         </div>
     </div>
