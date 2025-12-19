@@ -1,0 +1,27 @@
+{
+  "name": "shopify-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite build --watch",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bienskie/shopify-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bienskie/shopify-challenge/issues"
+  },
+  "homepage": "https://github.com/bienskie/shopify-challenge#readme",
+  "devDependencies": {
+    "rollup-plugin-styles": "^4.0.0",
+    "sass": "^1.97.0",
+    "vite": "^7.3.0"
+  }
+}
