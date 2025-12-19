@@ -6,6 +6,7 @@ $screen-lg-min: 1024px;
 $screen-xl-min: 1280px;
 $screen-xxl-min: 1601px;
 $screen-xxl-max: 1600px;
+$screen-lg-max: 1023px;
 
 @mixin xs {
 	@media screen and (min-width: #{$screen-xs-min}) {
@@ -59,4 +60,16 @@ $screen-xxl-max: 1600px;
 	@media screen and (min-width: #{$min-width}) {
 		@content;
 	}
+}
+
+@mixin max-1023 {
+	@media screen and (max-width: #{$screen-lg-max}) {
+		@content;
+	}
+}
+
+// Function: convert px to vw
+@function get-vw($px, $design-width: 1600) {
+	$px: $px / 1px;
+  	@return ($px / $design-width) * 100vw;
 }
