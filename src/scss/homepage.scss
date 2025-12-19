@@ -118,6 +118,7 @@
 .welcome {
     position: relative;
     padding: 42px 15px 67px;
+    background: rgba(239, 247, 250, 1);
 
     &__holder {
         max-width: 1264px;
@@ -198,6 +199,126 @@
 
         &--inner {
             max-width: 568px;
+        }
+    }
+}
+
+// features
+.features {
+    position: relative;
+    padding: 0 15px;
+    background: rgba(239, 247, 250, 1);
+
+    &__holder {
+        max-width: 1266px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 52px;
+        padding: 74px 38px;
+    }
+
+    &__list {
+        gap: 19px;
+
+        &--photo {
+            width: 135px;
+            height: 135px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+
+        &--label {
+            color: rgba(46, 48, 46, 1);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.333;
+        }
+    }
+}
+
+// how it works
+.how-it-works {
+    position: relative;
+    padding: 116px 15px 80px;
+
+    &__holder {
+        max-width: 1264px;
+        margin: 0 auto;
+    }
+
+    &__head {
+        position: relative;
+
+        &--sub-text {
+            color: rgba(46, 48, 46, 1);
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.333;
+            margin-bottom: 37px;
+        }
+
+        &--clock {
+            max-width: 113px;
+            margin: 0 auto 45px;
+        }
+
+        &--title {
+            color: rgba(46, 48, 46, 1);
+            font-family: var(--font-family-title);
+            font-size: 80px;
+            font-weight: 900;
+            letter-spacing: -1.33px;
+            text-align: center;
+            line-height: 52px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__steps {
+        margin-top: 90px;
+
+        &--list {
+            max-width: 333px;
+            width: calc(100% / 3);
+
+            &:first-child {
+                .how-it-works__steps--content {
+                    img {
+                        max-width: 88px;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                .how-it-works__steps--content {
+                    img {
+                        max-width: 61px;
+                    }
+                }
+            }
+
+            &:last-child {
+                .how-it-works__steps--content {
+                    img {
+                        max-width: 68px;
+                    }
+                }
+            }
+        }
+
+        &--photo {
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        &--content {
+            display: flex;
+            align-items: flex-start;
+            color: rgba(46, 48, 46, 1);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.33;
         }
     }
 }
