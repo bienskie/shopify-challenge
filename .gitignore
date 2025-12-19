@@ -1,0 +1,47 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Node / Vite
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+.vite/
+
+# =========================
+# Environment
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Shopify CLI
+# =========================
+.shopify/
+shopify.lock
+
+# =========================
+# Sass cache
+# =========================
+.sass-cache/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# System temp
+# =========================
+*.tmp
+*.swp
