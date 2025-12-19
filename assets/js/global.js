@@ -14,12 +14,24 @@
             });
         },
 
+        formulasTestimonials: function () {
+            $('.formulas__testimonials--slider').flickity({
+                cellAlign: 'center',   
+                contain: true,         
+                wrapAround: true,      
+                autoPlay: 5000,        
+                fade: true,            
+                pageDots: false,       
+                prevNextButtons: false 
+            });
+        },
+
     }
 
 
     jQuery(document).ready(function () {
-        app.bannerTestimonials();;
-
+        app.bannerTestimonials();
+        app.formulasTestimonials();
     });
 
     jQuery(window).on('load', function () {
