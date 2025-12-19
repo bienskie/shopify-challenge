@@ -26,12 +26,25 @@
             });
         },
 
+        productVideos: function () {
+            $('.product-videos__slider').flickity({
+                cellAlign: 'left',   
+                contain: true,         
+                wrapAround: true,      
+                autoPlay: 5000,        
+                fade: false,            
+                pageDots: false,       
+                prevNextButtons: false 
+            });
+        },
+
     }
 
 
     jQuery(document).ready(function () {
         app.bannerTestimonials();
         app.formulasTestimonials();
+        app.productVideos();
     });
 
     jQuery(window).on('load', function () {
